@@ -1,0 +1,229 @@
+/* Reset some basic elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Basic container and row styles */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row.bg-info.text-light {
+    background-color: #17a2b8; /* Bootstrap info color */
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background for navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.navbar-brand img {
+    height: 30px; /* Adjust logo height */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333; /* Default text color for navbar links */
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item.best-sellers .nav-link {
+    color: orange !important; /* Special color for Best Sellers */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    background-color: #f8f9fa; /* Dropdown background */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for dropdown */
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show on hover */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #333; /* Dropdown item color */
+    padding: 10px 20px;
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #e2e6ea; /* Hover effect for dropdown items */
+}
+
+/* Search functionality */
+.search-wrapper {
+    position: relative;
+    display: inline-block; /* Ensure it wraps around the icon and form */
+}
+
+.search-wrapper .search-form {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position it at the same vertical level as the icon */
+    right: 0; /* Position it to the right of the search icon */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it appears above other content */
+    white-space: nowrap; /* Prevent the search form from wrapping */
+}
+
+.search-wrapper .search-form.active {
+    display: block; /* Show when active */
+}
+
+.search-wrapper .search-form .form-control {
+    width: 200px;
+    margin-right: 10px;
+}
+
+/* Badge for shopping cart */
+.navbar-nav .nav-item .badge {
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+/* Hover effects */
+.navbar-nav .nav-item:hover .nav-link {
+    color: #0056b3; /* Darker shade on hover */
+    border-bottom: 2px solid #000; /* Black line on hover */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.text1 {
+    text-align: center;
+    font-size: 16px; /* Fixed unit */
+    font-weight: bold;
+    padding: 5%;
+}
+
+.text2 {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px; /* Fixed unit */
+}
+
+.text2 h2 {
+    display: inline-block;
+    text-align: center;
+    color: initial; /* Set your initial color here */
+    border-bottom: 2px solid transparent; /* Initial border for the effect */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease; /* Smooth transition for color and border */
+}
+
+.text2 h2:hover {
+    color: #0d3b66;
+    border-bottom-color: #000; /* Black line on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    .search-wrapper .search-form {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+    }
+}
+
+/* Card Styles */
+/* Add custom styles here */
+.navbar-nav .nav-link:hover {
+    border-bottom: 2px solid black;
+  }
+  
+  .navbar-nav .dropdown-menu {
+    border: none;
+  }
+  
+  .search-wrapper {
+    position: relative;
+  }
+  
+  .search-form {
+    display: none;
+  }
+  
+  .search-wrapper #searchIcon:hover + .search-form {
+    display: block;
+  }
+  
+  .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
+  .text1 {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .text2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+}
+.footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #fff;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #aaa;
+}
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.payment-icons img {
+    height: 30px;
+    margin-right: 10px;
+}
